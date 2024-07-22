@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>e-com app</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  <param-name>offer</param-name>
+  <param-value>Diwali Festival</param-value>
+  
+  </context-param>
+  
+
+  
+  
+  <servlet>
+  <servlet-name>es</servlet-name>
+  <servlet-class>com.jony.ElectronicServlet</servlet-class>
+  <init-param>
+  <param-name>discount</param-name>
+  <param-value>80%</param-value>
+  
+  </init-param>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>es</servlet-name>
+  <url-pattern>/ElectronicServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>sh</servlet-name>
+  <servlet-class>com.jony.ShoesServlet</servlet-class>
+  <init-param>
+  <param-name>discount</param-name>
+  <param-value>90%</param-value>
+  
+  
+  </init-param>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>sh</servlet-name>
+  <url-pattern>/ShoesServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>cs</servlet-name>
+  <servlet-class>com.jony.ClothsServlet</servlet-class>
+  <init-param>
+  <param-name>discount</param-name>
+  <param-value>95%</param-value>
+  </init-param>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>cs</servlet-name>
+  <url-pattern>/ClothServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

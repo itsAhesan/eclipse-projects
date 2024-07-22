@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- <bean class="com.jony.springMavenDemo.Demo" >
+				<property name="id" value="101"/>
+				<property name="name" value="Jony"/>
+
+			<constructor-arg value="90"/>
+			<constructor-arg value="jkk"/>
+
+
+</bean> -->
+
+<!-- <bean id="e1" class="com.jony.di.Engine"/>
+
+<bean class="com.jony.di.Car">
+<property name="e" ref="e1"></property>
+
+</bean> -->
+
+
+
+
+
+
+
+
+<bean id="tEng" class="com.jony.di.TurboEngine">
+<property name="name" value="Turbo En"></property>
+
+
+</bean>
+
+<bean class="com.jony.di.Car">
+<property name="name" value="BMW"/>
+<property name="e" ref="tEng"/>
+
+
+</bean>
+
+
+</beans>
